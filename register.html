@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>The Fashon Pet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">The Fahon Pet</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html">register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container">
+        <h2>Welcome to de Fashon Pet</h2>
+        <!-- registration form
+        name, age, gender, bread, service, owner, phone -->
+
+        <div class="container">
+            <div class="mb-3">
+                <label class="form-label">Name: </label>
+                <input class="form-control" type="text" placeholder="Enter pet's name" id="txtName">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Age: </label>
+                <input class="form-control" type="number" placeholder="Add the pet's age" id="txtAge">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender: </label>
+                <input class="form-control" type="text" placeholder="Add the pet's gender" id="txtGender">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Breed: </label>
+                <input class="form-control" type="text" placeholder="Add the pet's breed" id="txtBreed">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Services</label>
+                <select class="form-select" id="selService">
+                    <option value="nails cut">Nails Cut</option>
+                    <option value="gromming">Gromming</option>
+                    <option value="vaccines">Vaccines</option>
+                </select>
+            </div >
+            <div class="mb-3">
+                <label class="form-label">Owner: </label>
+                <input class="form-control" type="text" placeholder="Add the pet's owner" id="txtOwner">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone: </label>
+                <input class="form-control" type="text" placeholder="Add the pet's phone" id="txtPhone">
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-success" onclick="register()"><i class="fa-solid fa-circle-check"></i> Register</button>
+            </div>
+        </div>
+        <hr>
+            <div id="pets" class="container table" >
+                <p class="table-title"><span>Meet</span>Our pets</p>
+                <table class="table table-bordered bordered-primary">
+                    <thead>
+                        <tr >
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Genered</th>
+                            <th scope="col">Breed</th>
+                            <th scope="col">Services</th>
+                            <th scope="col">Owner's</th>
+                            <th scope="col">Phone's</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+    </main>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <footer id="info">
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="register.js"></script>
+    <script src="display.js"></script>
+</body>
+</html>
